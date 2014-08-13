@@ -22,6 +22,11 @@
 		766F12711988F22900D996D4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766F12551988F22900D996D4 /* CoreData.framework */; };
 		766F12791988F22900D996D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 766F12771988F22900D996D4 /* InfoPlist.strings */; };
 		766F127B1988F22900D996D4 /* myproTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 766F127A1988F22900D996D4 /* myproTests.m */; };
+		766F12861988F25600D996D4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766F12851988F25600D996D4 /* MainViewController.m */; };
+		766F128C1988F33700D996D4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766F128B1988F33700D996D4 /* BaseViewController.m */; };
+		766F12931988FCF900D996D4 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766F12921988FCF900D996D4 /* NewsViewController.m */; };
+		766F12961988FD0700D996D4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766F12951988FD0700D996D4 /* HomeViewController.m */; };
+		766F1298198A22D800D996D4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766F1297198A22D800D996D4 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		766F12761988F22900D996D4 /* myproTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "myproTests-Info.plist"; sourceTree = "<group>"; };
 		766F12781988F22900D996D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		766F127A1988F22900D996D4 /* myproTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myproTests.m; sourceTree = "<group>"; };
+		766F12841988F25600D996D4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		766F12851988F25600D996D4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		766F128A1988F33700D996D4 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		766F128B1988F33700D996D4 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		766F12911988FCF900D996D4 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		766F12921988FCF900D996D4 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		766F12941988FD0700D996D4 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		766F12951988FD0700D996D4 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		766F1297198A22D800D996D4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				766F1298198A22D800D996D4 /* CoreLocation.framework in Frameworks */,
 				766F12521988F22900D996D4 /* CoreGraphics.framework in Frameworks */,
 				766F12561988F22900D996D4 /* CoreData.framework in Frameworks */,
 				766F12541988F22900D996D4 /* UIKit.framework in Frameworks */,
@@ -103,6 +118,7 @@
 		766F124E1988F22900D996D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				766F1297198A22D800D996D4 /* CoreLocation.framework */,
 				766F124F1988F22900D996D4 /* Foundation.framework */,
 				766F12511988F22900D996D4 /* CoreGraphics.framework */,
 				766F12531988F22900D996D4 /* UIKit.framework */,
@@ -115,11 +131,18 @@
 		766F12571988F22900D996D4 /* mypro */ = {
 			isa = PBXGroup;
 			children = (
+				766F128F1988FCD900D996D4 /* Model */,
+				766F128E1988FCD300D996D4 /* View */,
+				766F128D1988FCCA00D996D4 /* Controller */,
 				766F12601988F22900D996D4 /* zyfcAppDelegate.h */,
 				766F12611988F22900D996D4 /* zyfcAppDelegate.m */,
 				766F12661988F22900D996D4 /* Images.xcassets */,
 				766F12631988F22900D996D4 /* mypro.xcdatamodeld */,
 				766F12581988F22900D996D4 /* Supporting Files */,
+				766F12841988F25600D996D4 /* MainViewController.h */,
+				766F12851988F25600D996D4 /* MainViewController.m */,
+				766F128A1988F33700D996D4 /* BaseViewController.h */,
+				766F128B1988F33700D996D4 /* BaseViewController.m */,
 			);
 			path = mypro;
 			sourceTree = "<group>";
@@ -151,6 +174,32 @@
 				766F12771988F22900D996D4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		766F128D1988FCCA00D996D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				766F12911988FCF900D996D4 /* NewsViewController.h */,
+				766F12921988FCF900D996D4 /* NewsViewController.m */,
+				766F12941988FD0700D996D4 /* HomeViewController.h */,
+				766F12951988FD0700D996D4 /* HomeViewController.m */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		766F128E1988FCD300D996D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		766F128F1988FCD900D996D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +250,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = zyf;
 				TargetAttributes = {
+					766F124B1988F22900D996D4 = {
+						DevelopmentTeam = WSFUTH35PR;
+					};
 					766F126B1988F22900D996D4 = {
 						TestTargetID = 766F124B1988F22900D996D4;
 					};
@@ -250,8 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				766F12651988F22900D996D4 /* mypro.xcdatamodeld in Sources */,
+				766F128C1988F33700D996D4 /* BaseViewController.m in Sources */,
 				766F12621988F22900D996D4 /* zyfcAppDelegate.m in Sources */,
+				766F12931988FCF900D996D4 /* NewsViewController.m in Sources */,
 				766F125E1988F22900D996D4 /* main.m in Sources */,
+				766F12961988FD0700D996D4 /* HomeViewController.m in Sources */,
+				766F12861988F25600D996D4 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,10 +424,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mypro/mypro-Prefix.pch";
 				INFOPLIST_FILE = "mypro/mypro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -381,10 +441,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mypro/mypro-Prefix.pch";
 				INFOPLIST_FILE = "mypro/mypro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -448,6 +512,7 @@
 				766F12801988F22900D996D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		766F12811988F22900D996D4 /* Build configuration list for PBXNativeTarget "myproTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +521,7 @@
 				766F12831988F22900D996D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

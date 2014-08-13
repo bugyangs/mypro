@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface NewsViewController : UIViewController
+#import <CoreLocation/CoreLocation.h>
+@interface NewsViewController : UIViewController<CLLocationManagerDelegate>
 
 @end

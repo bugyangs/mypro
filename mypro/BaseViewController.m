@@ -7,7 +7,8 @@
 //
 
 #import "BaseViewController.h"
-
+#import "NewsViewController.h"
+#import "HomeViewController.h"
 @interface BaseViewController ()
 
 @end
@@ -26,7 +27,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initNavi];
+}
+
+-(void)initNavi{
+    NewsViewController *newsController = [[NewsViewController alloc]init];
+    HomeViewController *homeController = [[HomeViewController alloc]init];
+    newsController.title = @"新闻";
+    homeController.title = @"主页";
+    UITabBarItem *newsTabBar = [[UITabBarItem alloc]init];
+    newsTabBar.title = @"新闻";
+    UITabBarItem *homeTabBar = [[UITabBarItem alloc]init];
+    homeTabBar.title = @"主页";
+    
+    newsController.tabBarItem = newsTabBar;
+    homeController.tabBarItem = homeTabBar;
+    
+    UINavigationController *newsNaviController = [[UINavigationController alloc]initWithRootViewController:newsController];
+    UINavigationController *homeNaviController = [[UINavigationController alloc]initWithRootViewController:homeController];
+    
+    NSArray *controllers = @[newsController,homeController];
+    
+    self.viewControllers = controllers;
 }
 
 - (void)didReceiveMemoryWarning

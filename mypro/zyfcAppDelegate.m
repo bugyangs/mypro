@@ -7,7 +7,7 @@
 //
 
 #import "zyfcAppDelegate.h"
-
+#import "BaseViewController.h"
 @implementation zyfcAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -19,6 +19,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    BaseViewController *baseController = [[BaseViewController alloc]init];
+    self.window.rootViewController = baseController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
